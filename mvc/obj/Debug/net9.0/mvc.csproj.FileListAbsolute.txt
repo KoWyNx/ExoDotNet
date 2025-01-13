@@ -95,3 +95,4 @@
 /Users/Fares/Desktop/Dev/mvc/mvc/obj/Debug/net9.0/mvc.pdb
 /Users/Fares/Desktop/Dev/mvc/mvc/obj/Debug/net9.0/mvc.genruntimeconfig.cache
 /Users/Fares/Desktop/Dev/mvc/mvc/obj/Debug/net9.0/ref/mvc.dll
+/Users/Fares/Desktop/Dev/mvc/mvc/obj/Debug/net9.0/mvc.sourcelink.json

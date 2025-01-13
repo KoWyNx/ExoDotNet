@@ -1,1 +1,30 @@
-<h1>Je suis la page pour afficher des contacts</h1>
+@model List<mvc.Models.Contact>
+
+<h1>@ViewBag.Message</h1>
+<p>Nombre total de contacts : @ViewData["Count"]</p>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.First().Id)</th>
+        <th>@Html.DisplayNameFor(model => model.First().Name)</th>
+        <th>@Html.DisplayNameFor(model => model.First().Email)</th>
+        <th>@Html.DisplayNameFor(model => model.First().Phone)</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var contact in Model)
+    {
+        <tr>
+            <td>@contact.Id</td>
+            <td>@contact.Name</td>
+            <td>@contact.Email</td>
+            <td>@contact.Phone</td>
+            <td>
+                <a asp-action="GetOneContact" asp-route-id="@contact.Id" class="btn btn-info btn-sm">Détails</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

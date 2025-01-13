@@ -1,1 +1,25 @@
-<h1>Un Contact</h1>
+@model mvc.Models.Contact
+
+<h1>@ViewData["Title"]</h1>
+<p>@ViewBag.Description</p>
+
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Id)</th>
+        <td>@Model.Id</td>
+    </tr>
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Name)</th>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Email)</th>
+        <td>@Model.Email</td>
+    </tr>
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Phone)</th>
+        <td>@Model.Phone</td>
+    </tr>
+</table>
+
+<a asp-action="GetAllContact" class="btn btn-secondary">Retour à la liste</a>
